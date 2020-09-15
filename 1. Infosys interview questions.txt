@@ -1,0 +1,356 @@
+
+               ******************  Interview questions of Software development ****************
+
+1)  What is SDLC ?
+    
+    SDLC is software development life cycle and it is an end to end process that defines the flow 
+    of development of a project from requirements stage to the maintainence stage and support stage.
+    Stages in SDLC are: 
+    Requirement analysis -> planning -> definition -> design -> development ->testing -> deployment and spport
+
+2) What is waterfall model?
+    just like waterfalls from top to bottom,
+       this approach follows breaking down of project activities into different phases.
+       Once a stage is completed, the next stage in the sequence is followed.
+       Each stage is dependent on the result of the previous stage.
+
+
+
+********************************* C and c++ questions ********************************
+
+1) difference b/w c and c++ ?
+
+  c is procedural language whereas c++ is object oriented language.
+  In c dynamic memory allocation is done through malloc() and calloc() function, whereas in c++ new operator is used.
+  No operator and function overloading in c, in c++ it exists under polymorphism
+  exception handling is not supported in c, whereas it is supported in c++
+
+2) What are the differences between C++ and Java? Which one do you think is better and why?
+  
+ c++ is a platform dependent language whereas java is platform independent
+ c++ is used for system programming , and java is used for application programming
+ c++ supports both pass by value and pass by reference , java doesnot support pass by reference
+ c++ supports operator overloading , java doesnt
+  
+
+ I think c++ is better because of operator overloading and passing by reference.
+ 
+
+3)What is OOPS concept and how is it implemented in C++?
+
+OOPS (or object-oriented programming) is a programming methodology where an application program is designed 
+considering everything as objects. It makes programming easy. 
+The main oops concepts are –
+
+Class – contains methods and variables. You can use a class by creating objects of the class.
+
+Inheritance – when there are common properties that can be reused, we can create a parent class. 
+    The child classes can then inherit the common methods and variables of the parent class.
+     A very common example is the Animal class. 
+     If Dog and Lion are two different animals, they can inherit the common methods of Animal like 
+     run(), eat() or makeSound(). 
+     The sound of Dog and Lion are different, so each will have their own implementation.
+
+Polymorphism – redefine the way the certain thing works using a different implementation. 
+               Polymorphism can be achieved using overloading and overriding.
+
+Abstraction – for complex real-time programs, not all the details need to be shown to the
+              user. Through abstraction, we can separate what an object does from how the 
+              object works and show only ‘what’ to the user.
+
+Encapsulation – encapsulation is based on the concept of having the data and code into a single unit to hide the
+                internal workings of the code to an end-user. For example, a class encapsulates several member
+                 variables and methods that may not be accessible outside the class.
+
+
+4) What are Structs and how are they different from Classes?
+
+   Struct is a customized data type that contains other data types. For example,
+    Members of a class are private by default, to make a variable public, 
+    we need to add the public modifier. 
+    In a struct, by default members are public and if we need any private members,
+    we have to use a modifier.
+    A class can be inherited but structs cannot.
+ 
+
+5) What is a pointer? Give an example.
+    Pointer is a variable that stores the address of another variable. 
+    Pointers allow passing variables by references using the address. For example –
+
+    int a = 23;
+    int *ptr = &a;
+    cout << ptr;
+
+
+5)  What is the difference between reference and pointer?
+   
+    Pointer stores the address of a variable, but the reference is just a copy 
+    of a variable with a different name.
+    int a;
+    int *ptr = &a;
+    // We use the & reference operator to initialize reference variable.
+    int a = 20;
+    int &ref = a;
+
+6) What are virtual functions?
+
+   A virtual function is a member function which is declared within a base class and 
+   is re-defined(Overriden) by a derived class.
+   Virtual functions ensure that the correct function is called for an object, regardless
+   of the type of reference (or pointer) used for function call.
+   It is used to achieve run time polymorphism
+   
+7) Give examples of data structures in C++.
+   
+    There are two types of data structures in C++ ? linear and nonlinear.
+    Linear – data elements are stored in sequence. Example, stack, queue and linked list.
+    Non-linear – tree and graph that are not stored in sequential manner.
+
+8)  What is friend function/class?
+
+    Friend function – if a function is marked as a ‘friend’ of a particular class, 
+                      it can access the protected and private members of the class.
+     Friend class – same as function, if a class is marked as friend of another class,
+                    it can access the protected and private members of that class.
+
+9) Why do we need the Friend class and function?
+    
+    Sometimes, there is a need for allowing a particular class to access private or protected members of a class. The solution is a friend class, 
+    which is capable of accessing the protected as well as the private members of the class 
+    in which it is declared as a friend.
+
+    Similarly to the friend class, a friend function is able to access private and protected
+    class members. A friend function can either be a global function or a method of some 
+    class.
+
+10) Is it possible for a C++ program to be compiled without the main() function?
+    
+    Yes, it is possible. However, as the main() function is essential for the execution of 
+    the program,  the program will stop after compiling and will not execute.
+
+11) What does a Static member in C++ mean?
+
+   A static member is allocated storage, in the static storage area, only once during the program lifetime.
+
+12) Post-increment ‘itr++’ operator is more expensive than the pre-increment ‘++itr’ operator. why
+   
+   The post-increment operator generates a copy of the element before proceeding with
+    incrementing the element and returning the copy. 
+ 
+13)  What is a mutable storage class specifier?
+    
+  Sometimes there is requirement to modify one or more data members of class / struct
+   through const function even though you don’t want the function to update other members
+   of class / struct. This task can be easily performed by using mutable keyword.
+
+
+14) Define an Abstract class in C++?
+   
+    An abstract class in C++ is referred to as the base class, which has at least one pure virtual function.
+
+
+*************** Java Interview Questions ***********************
+
+1) How is polymorphism implemented in Java?
+ 
+   Method overloading or static polymorphism
+   That means a method with the same name can have different         
+   number of parameters. Based on the parameter list, the  
+   appropriate method will be called.
+   print(String name){
+        //code
+    }
+   print(int marks, String name){
+      //code
+    }
+   print(String[] subjects, String name){
+        //code
+   }
+   // in the main program,
+   if(subjects.length >0){
+        print(String[] subjects, String name);
+   }
+   else if(marks>0){ 
+        print(int marks, String name);
+   }
+   else
+       print(String name);
+
+   Overriding or dynamic polymorphism
+   
+   his is the case when a child class extends parent class.    
+   During run time when the object is created, the appropriate 
+   method will be created.
+
+2) What is the difference between stack and heap memory?
+   
+   Heap �
+
+   JRE uses it to allocate memory for objects and JRE classes.
+   Garbage collection is done on heap memory
+   Objects created on heap are accessible globally.
+
+   Stack �
+
+    Short term references like the current thread of execution
+    References to heap objects are stored in stack
+    When a method is called, a new memory block is created. Once     
+    the method gets executed, the block is used by the next   
+    program.
+    
+   Stack memory size is smaller compared to heap memory.
+
+3)  What is the difference between Array and ArrayList?
+
+    The array has a fixed length, whereas the size of ArrayList 
+    can grow dynamically as elements are added.
+    ArrayList does not store primitives. If we have to store int 
+    elements, each should be wrapped into Integer objects to be 
+    stored in ArrayList. This is not the case with Array.
+
+
+
+****************  SQL Interview Questions ****************
+
+1) What is a database schema?
+
+   Schema is a logical representation or structure of the entire  
+   database. It defines how the data is organized, associated and 
+   stored in the database.
+
+2) What is RDBMS?
+   
+   Relational Database Management System (RDBMS) is a set of 
+   programs that helps a developer to interact with the database 
+   for creating, updating or deleting data. This is done through 
+   queries (SQL).
+
+3) What is the difference between unique key, foreign key and 
+   primary key?
+    
+   Primary key � identifies each row in a table. For example, in 
+   the student table, student_id can be the primary key used to 
+   access the details of student. student_id will always be   
+   different for different students. Can�t be null.
+
+
+   Unique key � set of one or more fields that collectively 
+   identify a database record. This should not include the  
+   primary key. Unique key can have one null value. For example, 
+   student_name and batch_number can be collectively used to   
+   identify top students in last 3 years.
+
+   Foreign key � a column that references the column of another   
+   table to establish the relationship between two tables. Most 
+   of the times, the primary key in one table is the foreign key 
+   in another. For example, the book table can have student_id as 
+   a foreign key that will determine the details of the books a 
+   student has taken.
+
+4) What are clustered indexes?
+
+   Indexes are used to speed the query time to improve 
+   performance. Think of it as an index in a book, which makes it 
+   easy for you to navigate to a particular page or chapter. 
+   Clustered index maintains the physical order of the data in a 
+   table. For example, if a clustered index is created on the 
+   student_id column of student table, student with student_id 5, 
+   will be stored as the 5th row and with id 10 will be in the 
+   10th row, irrespective of the order in which the data is 
+   inserted.
+
+5)What are SQL joins? How to use them to fetch data from multiple 
+  tables?
+
+   Joins are used to get results from multiple tables using primary and foreign keys of the related tables
+
+
+6) What are SQL triggers?
+ 
+   A trigger is a stored procedure in database which automatically invokes whenever a special event in the database occurs.
+
+7)  what are views ?
+Views in SQL are kind of virtual tables. A view also has rows and columns as they are in a real table in the database. We can create a view by selecting fields from one or more tables present in the database. A View can either have all the rows of a table or specific rows based on certain condition.
+
+********************HTML Questions **********************
+
+Question: What is the full form of HTML?
+Answer: Hypertext Mark-up Language.
+
+Question: Name some common tags used in HTML.
+Answer:,--main content
+
+Question: What is a frame?
+Answer: Frames can divide the html page into separate windows. Each frame is a different html document loaded using �src� attribute.
+
+
+************ HR Questions for Freshers ********************
+
+
+1)Tell me about youself?
+
+2) Some questions from your resume ?
+   
+   Regarding projects and follow up questions on the project
+3) Most difficult challenge you faced working on project?
+   
+   I can say about making dataset on our own for our project on
+   Obstacle Avoidance.
+4) Strengths and weaknesses ?
+    
+   Stengths : I am preety good at Problem Solving and Thinking    
+   soltuions.
+   Weaknesses: I can't switch my tasks untill i complete the                 
+   current task. Like when i play online contests . i cannot 
+   Switch b/w problems untill i solve current ones.
+
+5) Why do you think Infosys is a good choice for your career?
+
+6) What do you know about Infosys?
+    
+    Infosys Limited, is an Indian multinational corporation that provides business consulting, information technology and outsourcing services. Infosys is the second-largest Indian IT company after Tata Consultancy Services 
+
+7) What are your long-term career goals?
+
+   
+   
+
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,203 @@
+1) WHat are the advantages of DBMS over traditional file based   
+   systems?
+    
+   i) Less data redundancy and less inconsistency.
+   ii) Concurrent access by multiple users.
+   iii) Atomicity of Updates.
+   iv)  less integrity problems.
+
+2) What are super, primary , candidate and foreign keys ?
+
+  A super Key is a set of attributes of a relation upon which all attributes of the schema are functionally dependent.
+
+ A candidate key is a minimal superkey.
+
+ A primary key is one of the candidate keys  and it can uniquely identify rows in a table .
+
+A foreign key is a field or column in one table that can uniquely identifies a row of another table.
+
+
+3) Difference b/w primary key and unique constraints.
+ 
+  Primary key cannot have null value whereas unique constraints can have.
+
+  Primary key is only one in a table, there can be multiple unique constraints.
+
+
+4) What is database normalization ?
+
+   It is the process of analyzing a relation based on their functional dependencies and primary keys to achieve following properties.
+1) Minimum redundancy .
+2) Minimizing the insertion, deletion, and update Anomalies.
+
+
+5) What is SQl ?
+
+  It is a structured query language designed  for inserting and modyfing in a relational data base.
+
+6) What is DDL, DML , DCL in sql
+  
+   DDL - Data definition language.
+         SQL queries like create, drop, ALter , rename come under 
+         this.
+   DML  - Data manipulation language
+         SQL queries like select, insert, update come under this.
+   DCL  - Data control language 
+         SQL queries like GRANT, revoke come under this.
+
+7) what is the difference b/w having and where clause.
+
+    The difference is where clause cannot be used with   
+    aggregates, but having clause can be used
+ 
+    Where clause works on row's data not on aggregated data.
+    
+8) What is a join ?
+  
+   An SQL join is used to combine data from two or more tables, 
+   based on common field between them.
+
+   i) INNER JOIN  - only intersection data 
+   ii) left outer join  - intersection data along with left table
+       data.
+   iii) right outer join - intersection data along with right  
+        table data. 
+   iv) Full Outer join - return all records when there is match 
+       in either left or right table.
+
+9) What is identity ?
+ 
+   Identity is a column that generates numeric values 
+   automatically.
+   
+10) What is VIEW in SQL? How to create One.
+
+  A view is a virtual table based on the result set of the sql 
+  statement.
+  
+  create view view_name AS Select column_name from table_name  
+  where condition 
+
+11) What are the uses of view ?
+
+   i) Views can represent a subset of data in a table. and can  
+     limit exposure of data to the outer world.
+
+   ii) views can join and simplify multiple tables into single    
+   table.
+   iii) views take very little storage . As database contains 
+    only the definition of a view, not a copy of actutal data.
+   
+12) What is a Trigger ?
+    A trigger is a code that is associaed with insert, update or delte operations . the code is executed automatically whenever the associated query is executed on the table. Triggers can be usefull to maintain integrity in database.
+
+13) What are stored procedures ?
+   A stored procedure is like a function that contains a set of operations compiled together. it contains set of operations that are commonly used in an applicationn to do some common database task.
+
+14) What is the difference between Trigger and Stored Procedure?
+  
+   Unlike stored procedures, triggers cannot be called directly .   
+   Triggers are associated with queries.
+
+15) What is a transaction ? what are acide properties.
+
+   A database transaction is a set of operations that must be treated as whole, either all operations are executed or none.
+ ACID - Atomicity, consistency, isolation,durabilty.
+
+Atomicity - it gurantees that each transaction can be treated as a single unit
+
+Consitency - Transaction can only bring database from one consistent state to another.
+
+Isolation - Each transaction will execute in isolation from other transactions.
+
+Durabilty - it ensures that once a transaction is committed . it will remain committed even in case of system failure.
+
+
+16) what re indexes ? 
+    
+    A database index is a data structures which improves the speed of data retrieval by use of more storage space to maintain extra copies of data.
+
+17) What are clustered and non clustered indexes ?
+
+   Clustered indexes is the index according to which data is physically stored on disk. Only one such indexing for a table.
+
+   Non- clustered indexes - don't define physical ordering of data but logical ordering . eg. B tree, B+ tree are used for this purpose
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+******************************** SQL Queries ********************
+
+
+1) Q. There is a table where only one row is fully repeated. Write a Query to find the Repeated row
+
+Name	Section
+abc	CS1
+bcd	CS2
+abc	CS1
+
+Ans. Select name,section from table Group By name,section Having Count(*) > 1
+
+2) Q. Query to find 2nd highest salary of an employee?
+
+Select name,MAX(salary) As salry from employees where salary <(select Max(salary) from employees) 
+
+
+3) Q. There is a table which contains two column Student and Marks, you need to find all the students, whose marks are greater than average marks i.e. list of above average students.
+
+
+  select student,marks from table where marks > (select AVG(marks) from table) 
+
+
+4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

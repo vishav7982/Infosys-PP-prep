@@ -1,0 +1,313 @@
+ ************************** Questions extracted from INTERVIEW EXPERIENCES of POWER PROGRAMMERS ***********************************
+
+
+
+1) what are data structeres and why do we use them ?
+
+  A data structure is a specialized format for organizing and storing data.
+  General data structure types include the array, the file, the record, the 
+  table, the tree, and so on. Any data structure is designed to organize data
+  to suit a specific purpose so that it can be accessed and worked with in 
+  appropriate ways.
+  Data structures are important for the following reasons:
+  1. Data structures are used in almost every program or software system. 
+  2. Specific data structures are essential ingredients of many efficient 
+     algorithms, and make possible the management of huge amounts of data,
+     such as large integrated collection of databases.
+  3. Some programming languages emphasize data structures, rather than 
+      algorithms, as the key organizing factor in software design.
+
+2)  Explain some of the sorting algorithms you know  and write an algorithm for merge sort?
+    i) Bubble sort.
+    ii) Merge Sort.
+    iii) Insertion Sort.
+    iv) Quick Sort.
+
+    ///PsuedoCode or algorithm
+    MergeSort(arr[], l,  r)
+    If r > l
+        1. Find the middle point to divide the array into two halves:  
+              middle m = (l+r)/2
+        2. Call mergeSort for first half:   
+              Call mergeSort(arr, l, m)
+        3. Call mergeSort for second half:
+              Call mergeSort(arr, m+1, r)
+        4. Merge the two halves sorted in step 2 and 3:
+               Call merge(arr, l, m, r)
+
+
+
+3)  What is Stack ? Use of Stack in real world ?
+    Stack is a linear data structure which follows a particular order in which the
+    operations are performed. The order may be LIFO(Last In First Out) or 
+    FILO(First In Last Out).
+    Real-world Applications:
+    1) To reverse a word. 
+    2) An "undo" mechanism in text editors
+    3) Back/Forward stacks on browsers
+    4) Support for recursion.
+    5) Used in DFS.
+
+4)  What is a queue? and their real world examples?
+    A Queue is a linear structure which follows a particular order in which the operations
+    are performed. The order is First In First Out (FIFO)
+    Real-world Applications:
+    1)Key press sequence in keyboard.
+    2)used in networking printers. Printers hold their task in queue.
+    3)Queue is also used by Operating systems for job scheduling.
+    4)Used in BFS.
+
+5)  How is B+ tree different from B Tree ?
+    B-Tree:
+      B-Tree is known as a self-balancing tree as its nodes are sorted in the inorder traversal.
+    B+ -Tree:
+      B+ tree eliminates the drawback B-tree used for indexing by storing data pointers only at 
+      the leaf nodes of the tree. Thus, the structure of leaf nodes of a B+ tree is quite different from the structure of internal nodes of the B tree.
+    Difference :
+
+                            B- tree                   |                       B+ tree
+                                                      |
+     1) All internal and leaf nodes have pointers     |     1) Only leaf nodes have pointers.
+                                                      |
+     2) Searching is slower in B-tree                 |    2) Searching is Faster in B+ tree as all keys are at leaf nodes.
+                                                      |
+     3) Leaf Nodes are not Stored as structural       |    3) leaf nodes are stored as structural linked list.
+        linked lists                                  |
+     4) In a B -tree, search keys and data are stored |     4) But in B+ tree, data is stored only in leaf nodes.
+        in internal or leaf nodes.                    |
+ 
+
+6)   How do negative numbers are stored in memory ?
+     Whenever a number with minus sign is encountered, the number is converted into its binary equivalent. The 2's 
+     compliment is calculated and stored in a memory and sign bit is set to 1 .
+     Whenever it comes on accesing that value first the sign bit is checked if it is 1 
+     then the binary number will be 2 complemented and converted to decimal number.
+
+
+
+     EXPERIENCE NUMBER - 2
+
+1) Given a linked list and find its middle element.
+       you can use fast and slow pointer. 
+
+2) Implement merge sort but not in array,in linked list.
+        ///refer to coding folder i had done it there.
+
+3) Given a file consisting of billions of characters.Read the file and for each chunk of
+   6 unique characters in the file map the string of all possible 6 letter chunks of 
+   unique characters to a unique value. Print the entire output.
+ solution : 
+
+
+
+   EXPERIENCE NUMBER - 3
+ 
+ 1) TELL ME ABOUT YOUSELF?
+     SIR, my name is vishav singh and i am currently persuing my b.tech in computer science from NIT Srinagar.
+     and my current CGPA is 7.25.     
+     I had a chance of gaining experience from one internship and a few academic and non- academic projects.
+     
+     I used to do competitive coding and i have reached  4* on codechef and a developer rank of 256 on hackerearth.
+     
+     In spare time,  i do competitive coding , read technical blogs and play badminton 
+     
+     I spent this past winter in Bangalore, working as an intern at IISC Bangalore. There i worked on computer vision project.
+     It was a great experience overall and i learned a lot about computer vision and object detection and classification technologies.
+     and i learnt a lot about time management as our schedule was very strict like 9 am to 7pm for  6 days a week.
+     
+     ///then interviewer will ask you about your project
+     
+     Sir, it was a research based project. we had to develop an algorithm which will avoid obstacles in front of our drone 
+     with as much minimum computation as possible.
+     So, after a lot of brainstorming, we thought of using ORB as object matching algorihm and used this to calculate distance and move our drone accordingly
+     
+
+ 2) Write a program to check whether a string is a palindrome or not.
+         use two pointer, reverse library funcion or stack or you can solve with any approacg you know.
+    
+
+ 3) Write algorithm for heap sort.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4)  Write a program to find the length of the linked list.
+    do linear traversal of linked list and increment count everytime untill you reach last of the linked list
+
+Python Questions be he wrote python in his resume ?
+
+5) explain the concept of lambda function in python.
+   its a small anonymous function. 
+   In python, a lambda function is a single-line function declared with no name . it can have any number of arguments but it can only have 
+   one expression.
+   syntax 
+          lambda arguments : expression
+  eg. x  = lambda a:a+10;
+      print(x(5))
+      output : 15
+
+6) what is self ?
+   Self parameter is a reference to the current instance of the class and is used to access variables that belongs to the class.
+
+7) Difference b/w Python2 and Python3 ?
+   In python3 , print statement is replaced with a print function.
+   In python2 , implicit string type is ASCII but in python3 it is UNICODE.
+   In python3 , range function is used in place of xrange.
+   there is difference in error handling , As keyword is used in python3 whereas its not used in python2.
+8) Tell me the difference between list & tuple ?
+   
+  i) Lists are mutable.
+     Tuples are not.
+  ii) lists consume more memory,
+       tuples consume less memory as compared to the list.
+  iii) lists have several built-in methods whereas tuples have no built-in methods
+       like list have cmp(),len(),max(),min() methods.
+   
+9) What is regex?
+   A regex is a short form for regular expression. and it is a sequence of characters that define a search pattern.
+   Usually such string patterns are used by string-searching algorithms for find or find and replace operations.
+
+
+
+INTERVIEW EXPERIENCE 4 
+
+He asked some questions on my favorite language : java
+
+1) is java an object-oriented language or object based language?
+    
+   Basic difference b/w object oriented and object based
+ 
+             OBJECT - BASED
+  i) object based supports use of objects and encapsulation.
+  ii) They doesnot support inheritence or polymorphism or both.
+  iii) Object based languages doesnot support built-in objects.
+     eg. javascricpt etc.
+                OBJECT ORIENTED 
+  i) it supports all the features of OOPS including inheritence and polymorphism
+  ii) They supports builtin objects.
+    eg. java,c++
+
+
+2) Difference b/w C and java?
+
+  C is a low level, procedural language. whereas java is and object oriented , high level language.
+  java uses objects whereas c used functions.
+  c is faster as its closer to machine code where as java is easy to use and learn.
+
+
+3) What is data abstraction. Explain with example.
+   
+   Abstraction means displaying only essential information and hiding the background details or implementation.
+   
+   Real life Example :
+         consider a man driving a car , he only knows appling brakes stop the car and pressing accelerator will increase
+         the speed . so he doesnt know about internal working of them . so it is abstraction.
+   IN classes :
+        public ,private access specifiers are used to implement abstraction.
+
+
+4) How it is different from polymorphism ?
+  Polymorphism is one thing having different forms.
+  It includes function overloading , function overridding , operator overloading.
+
+
+  Now interviewer shifted towards DBMS ?
+ 
+1) what are primary keys ?
+   It is  a field in a table which can uniquely identifies each row 
+
+2) Write a query to find all data of employess with second-most salary.
+
+   select * from employee where  salary < (select MAX(salary) from employee)
+  
+3) write a query to for sorting all entries of table by name.
+   
+   select * from table ORDER BY name
+
+
+He asked to name some web technologies.
+    html, css, javascript etc.
+
+1) Explain me the difference b/w  html and html5
+    
+   Html does not support the audio or video tags whereas HTML5 does support.
+   Html uses cookies to store temporary data , whereas html5 uses databases and application cache to store offline data.
+   HTML doesnot allow javascript to run in browser, HTML5 supports javascript.
+   HTML is less mobile-friendly, HTML5 is more mobile friendly.
+
+2) what is c in css
+   css stands for cascading style sheet.
+3) Write a code for form validation.
+   we can use automatic html form validation 
+   
+   <form action = " ---- " method="post">
+     <input type ="text" name="fname" required>
+     <input typ = "submit" value ="submit">
+   </form>
+
+
+
+And from data structure he asked a program to reverse a linked list.
+
+   
+
+Interview Experience 5:
+ 
+
+1) who developed python ?
+   Guido van Rossum 
+
+2) difference b/w list and tuple ?
+    already explained above.
+3) lambda functions ?
+    already explained above.
+4) write a lambda function to print square of a number.
+    x  = lambda a:a*a
+    print(x(5))
+    output: 25
+
+DS related questions:
+1) write a program for traversal of binary search tree.
+   already in coding folder.
+2) Implement stack and queue.
+   already in coding folder.
+3) You are given a file of words, find most frequent used words.
+   already in coding folder.
+4) find the reverse of a linked list in single traversal. 
+
+    iterative solution of reversing a linked list.
+    use curr, next and prev variables to reverse a linked list.
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
