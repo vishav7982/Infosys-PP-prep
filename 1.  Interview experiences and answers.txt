@@ -292,6 +292,29 @@ DS related questions:
     iterative solution of reversing a linked list.
     use curr, next and prev variables to reverse a linked list.
 
+  
+  
+  INTERVIEW EXPERIENCE :
+  
+  1) write a program to add fractions and output should also be in fraction
+  
+  2) write a sql query for count of male and female in a table. 
+      if two queries :
+         select count(gender) from table where gender ='male'
+         select count(gender) from table where gender ='female'
+      if only one query:
+         select count(gender) from table group by gender
+  3) write a sql query to find duplicate rows in a table
+       suppose 2 columns name, age
+      
+      select  name,age from table group by name,age  where count(id) >1; 
+  
+  4) Some probability question based on coin
+  
+  5) one aptitude question like x1 men and y1 women do some work in x days and x2 and y2 in y days . how many days x3 and y3 requires.
+  
+   
+   
    
 
 
