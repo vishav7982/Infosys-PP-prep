@@ -1,0 +1,32 @@
+
+1) Experiences :
+
+    Sir, i had a chance of gaining experience from one internship at IISC Bangalore
+    in the field of computer vision.  our task was to avoid obstacles in front of our drone
+    with as minimu computation as possible.
+    Its a research based internship and we had to develop our own model for this task.
+    A bunch of algorithms for this task are already implemented in real world like tesla is  
+    using it to avoid obstacles in front of their self driving cars. But our problem was , we cannot
+    fit those heavy sensors in our drone.
+    SO we started our research on computer vision particullarly Stereo vision.
+    At first, we came up with YOLOV3 model based approach which is fastest object classification algorithm at
+    that time. BUt the problem with YOLOV# based model is that it cannot classify all objects so it was ignoring 
+    those objects which are not in its class library. 
+
+    SO, we did more research and came to know about ORB  which is Oriented fast and rotated brief algorithm.
+    
+
+    ORB  is a feature matching algorithm . It creates descriptors on left frame and matches it with right frame.
+   And we can get the disparity of each pixel and with the help of disparity we can calculate the distance of the object 
+   from camera . with this distance, we can classify it as obstacle .
+
+
+SKills : 
+  Sir , i am good in c, c++ ,DSA , python. 
+  I also do competitive programming on various coding websites.
+
+Projects :
+
+  Obstacle avoidance : explained above.
+  BlackJack game : It was just a lab project we had to implement source code of black jack game 
+
