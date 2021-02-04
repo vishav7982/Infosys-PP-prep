@@ -1,0 +1,99 @@
+1) different types of joins ?
+
+INNER JOIN - The INNER JOIN keyword selects all rows from both the tables as long as the condition satisfies.
+LEFT JOIN - This join returns all the rows of the table on the left side of the join and matching rows for the table on the right side of join. 
+RIGHT JOIN - this join returns all the rows of the table on the right side of the join and matching rows for the table on the left side of join.
+FULL JOIN - FULL JOIN creates the result-set by combining result of both LEFT JOIN and RIGHT JOIN. 
+
+2) 3-tier architecture ?
+
+it divides the complete system into three interrelated but independent modules
+
+i) physical level  - the information about the location of database objects in the data store is kept.
+ii) conceptual level -  data is represented in the form of various database tables.
+iii) External level - different views can be generated for different users. The main focus of external level is data abstraction.
+
+external level
+   |    |
+conceptual level
+   |    |
+physical level <--------> datastore
+
+
+3) INDEXING ?
+
+Indexing is a way to optimize the performance of a database by minimizing the number of disk accesses required when a query is processed. 
+It is a data structure technique which is used to quickly locate and access the data in a database.
+
+types :
+i) clustered Indexing: when more than two records are stored in the same file.
+we can reduce the cost of searching reason being multiple records related to the same thing are stored at one place 
+ii) Non-clustered : it just tells us where the data lies, i.e. it gives us a list of  references to the location where the data is actually stored.
+
+4) Schedulling in DBMS ?
+
+it is a process of lining the transactions and executing them one by one . when there are multiple transactions 
+that are running in a concurrent manner and the order of operation is needed to be set so that the operations do 
+Scheduling is brought into play and the transactions are timed accordingly. 
+
+
+5) ACID Properties?
+
+A- Atomicity - the entire transaction takes place at once or doesnt happen at all
+C - consistenct - the database must be consistent before and after the transaction.
+I - ISolation - multiple transactions occur independentently without interference
+D - Durabilty - the changes of a successfull transaction occurs even if the system failure occurs
+
+consistenty : The core concept of consistency is that a given transaction will successfully update the data 
+(or whatever it’s doing) as long as it doesn’t somehow violate any constraints or checks within the system. 
+
+6) Normalization ?
+
+Normalization is the process of organizing data in a database. This includes creating tables and establishing 
+relationships between those tables according to rules designed both to protect the data and to make 
+the database more flexible by eliminating redundancy and inconsistent dependency.
+
+7) FLat file system ?
+every file is stored in same folder or same directory level
+it is used before heirarchical database storing.
+
+so it is very hard to find specific files related to each other.
+also every file needs to have a unique name
+
+
+8) why we prefer NoSQL ?
+NoSQL databases are specifically designed for unstructured data which can be document-oriented, column-oriented, graph-based, etc. 
+In this case, a particular data entity is stored together and not partitioned. 
+So performing read or write operations on a single data entity is faster for NoSQL databases as compared to SQL databases.
+
+NoSQL databases have a dynamic schema that is much better suited for big data as flexibility is an important requirement. 
+
+1) differnece b/w abstraction and encapsulation ?
+
+2) difference b/w abstract class and interface ? // java 
+
+3) multithreading ?
+
+4) real life applications of polymorphism ?
+
+ like in saving phone numbers .
+ you can save a phone number under one name and also two phone numbers under one name
+ (method overloading)
+ create_contact(name,number)  and create_contact(name,num1,num2);
+
+ method overriding ()
+
+ like buy some ice cream from one parlour .
+ buy same flavour from another parlour of same brand but in other location. this parlour have some special toppings
+
+ so besides same ice cream from same brand they can differ in taste.
+
+
+
+ 5) given a 2GB file and ram size is 1 gb design an algo to sort the file.
+
+
+ simple divide 2gb file into 2 files of 1 gb . sort them separately.
+ then apply mergesort on both the files .
+
+ using two pointers we can sort it 
