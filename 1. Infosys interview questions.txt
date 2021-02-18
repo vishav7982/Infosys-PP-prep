@@ -40,25 +40,25 @@
 
 OOPS (or object-oriented programming) is a programming methodology where an application program is designed 
 considering everything as objects. It makes programming easy. 
-The main oops concepts are –
+The main oops concepts are â€“
 
-Class – contains methods and variables. You can use a class by creating objects of the class.
+Class â€“ contains methods and variables. You can use a class by creating objects of the class.
 
-Inheritance – when there are common properties that can be reused, we can create a parent class. 
+Inheritance â€“ when there are common properties that can be reused, we can create a parent class. 
     The child classes can then inherit the common methods and variables of the parent class.
      A very common example is the Animal class. 
      If Dog and Lion are two different animals, they can inherit the common methods of Animal like 
      run(), eat() or makeSound(). 
      The sound of Dog and Lion are different, so each will have their own implementation.
 
-Polymorphism – redefine the way the certain thing works using a different implementation. 
+Polymorphism â€“ redefine the way the certain thing works using a different implementation. 
                Polymorphism can be achieved using overloading and overriding.
 
-Abstraction – for complex real-time programs, not all the details need to be shown to the
+Abstraction â€“ for complex real-time programs, not all the details need to be shown to the
               user. Through abstraction, we can separate what an object does from how the 
-              object works and show only ‘what’ to the user.
+              object works and show only â€˜whatâ€™ to the user.
 
-Encapsulation – encapsulation is based on the concept of having the data and code into a single unit to hide the
+Encapsulation â€“ encapsulation is based on the concept of having the data and code into a single unit to hide the
                 internal workings of the code to an end-user. For example, a class encapsulates several member
                  variables and methods that may not be accessible outside the class.
 
@@ -75,7 +75,7 @@ Encapsulation – encapsulation is based on the concept of having the data and c
 
 5) What is a pointer? Give an example.
     Pointer is a variable that stores the address of another variable. 
-    Pointers allow passing variables by references using the address. For example –
+    Pointers allow passing variables by references using the address. For example â€“
 
     int a = 23;
     int *ptr = &a;
@@ -103,14 +103,14 @@ Encapsulation – encapsulation is based on the concept of having the data and c
 7) Give examples of data structures in C++.
    
     There are two types of data structures in C++ ? linear and nonlinear.
-    Linear – data elements are stored in sequence. Example, stack, queue and linked list.
-    Non-linear – tree and graph that are not stored in sequential manner.
+    Linear â€“ data elements are stored in sequence. Example, stack, queue and linked list.
+    Non-linear â€“ tree and graph that are not stored in sequential manner.
 
 8)  What is friend function/class?
 
-    Friend function – if a function is marked as a ‘friend’ of a particular class, 
+    Friend function â€“ if a function is marked as a â€˜friendâ€™ of a particular class, 
                       it can access the protected and private members of the class.
-     Friend class – same as function, if a class is marked as friend of another class,
+     Friend class â€“ same as function, if a class is marked as friend of another class,
                     it can access the protected and private members of that class.
 
 9) Why do we need the Friend class and function?
@@ -132,7 +132,7 @@ Encapsulation – encapsulation is based on the concept of having the data and c
 
    A static member is allocated storage, in the static storage area, only once during the program lifetime.
 
-12) Post-increment ‘itr++’ operator is more expensive than the pre-increment ‘++itr’ operator. why
+12) Post-increment â€˜itr++â€™ operator is more expensive than the pre-increment â€˜++itrâ€™ operator. why
    
    The post-increment operator generates a copy of the element before proceeding with
     incrementing the element and returning the copy. 
@@ -140,7 +140,7 @@ Encapsulation – encapsulation is based on the concept of having the data and c
 13)  What is a mutable storage class specifier?
     
   Sometimes there is requirement to modify one or more data members of class / struct
-   through const function even though you don’t want the function to update other members
+   through const function even though you donâ€™t want the function to update other members
    of class / struct. This task can be easily performed by using mutable keyword.
 
 
@@ -184,13 +184,13 @@ Encapsulation – encapsulation is based on the concept of having the data and c
 
 2) What is the difference between stack and heap memory?
    
-   Heap �
+   Heap –
 
    JRE uses it to allocate memory for objects and JRE classes.
    Garbage collection is done on heap memory
    Objects created on heap are accessible globally.
 
-   Stack �
+   Stack –
 
     Short term references like the current thread of execution
     References to heap objects are stored in stack
@@ -228,19 +228,19 @@ Encapsulation – encapsulation is based on the concept of having the data and c
 3) What is the difference between unique key, foreign key and 
    primary key?
     
-   Primary key � identifies each row in a table. For example, in 
+   Primary key – identifies each row in a table. For example, in 
    the student table, student_id can be the primary key used to 
    access the details of student. student_id will always be   
-   different for different students. Can�t be null.
+   different for different students. Can’t be null.
 
 
-   Unique key � set of one or more fields that collectively 
+   Unique key – set of one or more fields that collectively 
    identify a database record. This should not include the  
    primary key. Unique key can have one null value. For example, 
    student_name and batch_number can be collectively used to   
    identify top students in last 3 years.
 
-   Foreign key � a column that references the column of another   
+   Foreign key – a column that references the column of another   
    table to establish the relationship between two tables. Most 
    of the times, the primary key in one table is the foreign key 
    in another. For example, the book table can have student_id as 
@@ -281,7 +281,7 @@ Question: Name some common tags used in HTML.
 Answer:,--main content
 
 Question: What is a frame?
-Answer: Frames can divide the html page into separate windows. Each frame is a different html document loaded using �src� attribute.
+Answer: Frames can divide the html page into separate windows. Each frame is a different html document loaded using ‘src’ attribute.
 
 
 ************ HR Questions for Freshers ********************
@@ -314,9 +314,28 @@ Answer: Frames can divide the html page into separate windows. Each frame is a d
 
    
    
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-   
-   
+
+1) what is solid principles in OOPS ?
+
+They SOlID principles are five principles of object oriented class design. they are set of rules and best practices to follow while designing a class structure 
+
+i) the Single Responsibility principle - it means a class should do one thing and therefore it should have only a single reason to change.
+
+ii) The Open-closed principle  - this principle requires that classes should be open for extension and closed to modification.
+
+Modification - changing the code of an existing class.
+Extension - adding new functionalities.
+
+iii) The Liskov SUbstitution principle -  it states that the subclasses should be substitutable for their base classes. it means given that class B is subclass of class A, we should be able to pass an object of class B to any method that expects an object of class A and the method should not give any weird output in that case.
+
+iv) The interface segregation principle - segregation means keeping things seperate and the interfaces seperation principle is about seperating the interfaces.
+
+this principles states that many client-specefic interfaces are better than one general-purpose interface. clients should not be forced to implement a function they donot need.
+
+
+v) The dependency Inversion principle - it states that our classes should depend on abstract classes instead of concrete classes and functions.
 
 
 
